@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="mr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>मराठी भाषा ज्ञानपीठ — परिचय, इतिहास, व्याकरण आणि १००० शब्दसंग्रह</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       १. स्वागत कक्ष (Full-screen Welcome Hero Screen)
+       ========================================================= -->
+  <section class="welcome-screen" id="welcome-hero-screen" aria-label="स्वागत कक्ष">
+    <div class="welcome-container">
+      
+      <!-- Welcome Top Header Badge -->
+      <div class="welcome-top-bar">
+        <span class="welcome-badge">अभिजात भाषा वैभव · Classical Language of India</span>
+        <div class="welcome-top-stats">
+          <span class="welcome-mini-stat">📜 २५००+ वर्षे इतिहास</span>
+          <span class="welcome-mini-stat">👥 ९+ कोटी भाषक</span>
+          <span class="welcome-mini-stat">📚 १०००+ शब्दसंग्रह</span>
+        </div>
+      </div>
+
+      <!-- Main Hero Content: Two-column Editorial Layout -->
+      <div class="welcome-hero-grid">
+        <!-- Left: Headline, Quote, CTAs -->
+        <div class="welcome-content-col">
+          <h1 class="welcome-title">मराठी — <span class="welcome-title-accent">शब्दांत संस्कृती,</span> <br />भाषेत इतिहास.</h1>
+
+          <div class="welcome-quote-wrap">
+            <blockquote class="welcome-quote">
+              "माझ्या मराठीची बोलू कौतुके ।<br />
+              परि अमृतातेहि पैजासी जिंके ॥"
+            </blockquote>
+            <cite class="welcome-author">— संत ज्ञानेश्वर महाराज (भावार्थदीपिका / ज्ञानेश्वरी, १२९०)</cite>
+          </div>
+
+          <p class="welcome-description">
+            अडीच हजार वर्षांचा अखंड ऐतिहासिक प्रवास, ५२ शास्त्रीय वर्णांची सुवर्ण वर्णमाला, तार्किक व्याकरण आणि १००० दैनंदिन शब्दांचे परस्परसंवादी डिजिटल दालन.
+          </p>
+
+          <div class="welcome-cta-group">
+            <button class="welcome-explore-btn" id="explore-btn" aria-label="भाषेचा प्रवास सुरू करा">
+              <span>भाषेचा प्रवास सुरू करा</span>
+              <span class="btn-arrow-icon" aria-hidden="true">→</span>
+            </button>
+            <button class="welcome-secondary-btn" id="explore-vocab-btn" aria-label="१,००० शब्द शोधा">
+              <span class="btn-icon">📚</span>
+              <span>१,००० शब्द शोधा</span>
+            </button>
+          </div>
+
+          <!-- Quick Alphabet & Featured Words Strip -->
+          <div class="welcome-quick-preview">
+            <div class="quick-preview-block">
+              <span class="quick-preview-label">वर्णमाला झलक:</span>
+              <div class="quick-letters-strip">
+                <span class="preview-letter-tile" title="अ (ऱ्हस्व स्वर)">अ</span>
+                <span class="preview-letter-tile" title="आ (दीर्घ स्वर)">आ</span>
+                <span class="preview-letter-tile" title="क (कंठ्य व्यंजन)">क</span>
+                <span class="preview-letter-tile" title="ग (मृदू व्यंजन)">ग</span>
+                <span class="preview-letter-tile" title="ळ (स्वतंत्र वर्ण)">ळ</span>
+                <span class="preview-letter-tile" title="ज्ञ (संयुक्त व्यंजन)">ज्ञ</span>
+              </div>
+            </div>
+            <div class="quick-preview-block">
+              <span class="quick-preview-label">वैशिष्ट्यपूर्ण शब्द:</span>
+              <div class="quick-words-strip">
+                <span class="preview-word-chip">मायबोली</span>
+                <span class="preview-word-chip">अमृतवाणी</span>
+                <span class="preview-word-chip">स्वराज्य</span>
+                <span class="preview-word-chip">ज्ञानामृत</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Cultural Heritage Artwork Card -->
+        <div class="welcome-visual-col">
+          <div class="cultural-heritage-card">
+            <div class="heritage-card-frame">
+              <img src="assets/marathi_manuscript.png" alt="मराठी हस्तलिखित, ग्रंथ आणि मोडी लिपी साहित्याचे कलात्मक चित्र" class="heritage-illustration" />
+              <div class="heritage-motif-badge">
+                <img src="assets/marathi_peacock.png" alt="पारंपरिक मराठी मयूर कलाकृती" class="peacock-motif-img" />
+              </div>
+            </div>
+            <div class="heritage-card-meta">
+              <div class="heritage-card-title">मराठी ज्ञानपीठ डिजिटल संग्रहालय</div>
+              <p class="heritage-card-sub">गाथासप्तशती, ज्ञानेश्वरी, शिवकालीन राज्यव्यवहार कोश ते आधुनिक ज्ञानभाषेपर्यंतचा वारसा</p>
+            </div>
+
+            <!-- Mini Section Jump Links -->
+            <div class="welcome-section-shortcuts">
+              <button class="shortcut-pill" data-jump="intro">१. परिचय</button>
+              <button class="shortcut-pill" data-jump="history">२. इतिहास</button>
+              <button class="shortcut-pill" data-jump="varnamala">३. वर्णमाला</button>
+              <button class="shortcut-pill" data-jump="grammar">४. व्याकरण</button>
+              <button class="shortcut-pill" data-jump="dialects">५. बोलीभाषा</button>
+              <button class="shortcut-pill" data-jump="flashcards">६. शब्दसंग्रह</button>
+              <button class="shortcut-pill" data-jump="resources">७. संसाधने</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       २. मुख्य परस्परसंवादी ॲप्लिकेशन (Main Workspace)
+       ========================================================= -->
+  <div class="app-workspace" id="app-main-workspace">
+    
+    <!-- Top Header Bar -->
+    <header class="app-header">
+      <div class="header-left">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="मेनू उघडा">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="brand-wrap">
+          <span class="brand-logo-mark" aria-hidden="true">🪶</span>
+          <span class="brand-title">मराठी ज्ञानपीठ</span>
+          <span class="brand-badge">अभिजात भाषा</span>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <!-- Sound Toggle Button -->
+        <button class="header-ctrl-btn" id="sound-toggle-btn" title="ध्वनी चालू किंवा बंद करा">
+          <span id="sound-toggle-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </span>
+          <span id="sound-toggle-label">ध्वनी: चालू</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="header-ctrl-btn" id="theme-toggle-btn" title="थीम बदला (प्रणाली, प्रकाशमय, गडद)">
+          <span id="theme-toggle-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+            </svg>
+          </span>
+          <span id="theme-toggle-label">प्रकाशमय</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Workspace Body: Collapsible Vertical Tool + Content Stage -->
+    <div class="workspace-body">
+      
+      <!-- उभे परस्परसंवादी साधन (Vertical Tool Navigation) -->
+      <nav class="vertical-sidebar" id="vertical-tool-nav" aria-label="मुख्य विभाग मार्गदर्शिका">
+        <div class="sidebar-header">
+          <span class="sidebar-heading">विभाग सूची</span>
+          <button class="sidebar-toggle-btn" id="toggle-sidebar-btn" title="मेनू आकुंचन / विस्तार करा">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="sidebar-nav-list">
+          <li>
+            <button class="nav-tool-item active" data-section="intro" data-title="भाषा परिचय">
+              <span class="nav-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </span>
+              <span class="nav-item-label">१. भाषा परिचय</span>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-tool-item" data-section="history" data-title="इतिहास व उगम">
+              <span class="nav-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </span>
+              <span class="nav-item-label">२. इतिहास व उगम</span>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-tool-item" data-section="varnamala" data-title="वर्णमाला (५२ वर्ण)">
+              <span class="nav-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </span>
+              <span class="nav-item-label">३. वर्णमाला (५२ वर्ण)</span>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-tool-item" data-section="grammar" data-title="व्याकरण प्रयोगशाळा">
+              <span class="nav-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </span>
+              <span class="nav-item-label">४. व्याकरण प्रयोगशाळा</span>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-tool-item" data-section="dialects" data-title="प्रादेशिक बोलीभाषा">
+              <span class="nav-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                  <line x1="8" y1="2" x2="8" y2="18"></line>
+                  <line x1="16" y1="6" x2="16" y2="22"></line>
+                </svg>
+              </span>
+              <span class="nav-item-label">५. प्रादेशिक बोलीभाषा</span>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-tool-item" data-section="flashcards" data-title="१००० शब्दसंग्रह">
+              <span class="nav-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </span>
+              <span class="nav-item-label">६. १००० शब्दसंग्रह</span>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-tool-item" data-section="resources" data-title="अभ्यास संसाधने">
+              <span class="nav-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </span>
+              <span class="nav-item-label">७. अभ्यास संसाधने</span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <span>मराठी भाषा गौरव</span>
+        </div>
+      </nav>
+
+      <!-- Dynamic Content Stage -->
+      <main class="content-stage" id="content-stage-scroll">
+        <!-- विभाग १: परिचय -->
+        <article class="content-panel-section active" id="section-intro">
+          <div id="intro-root"></div>
+        </article>
+
+        <!-- विभाग २: इतिहास व उगम -->
+        <article class="content-panel-section" id="section-history">
+          <div id="history-root"></div>
+        </article>
+
+        <!-- विभाग ३: वर्णमाला -->
+        <article class="content-panel-section" id="section-varnamala">
+          <div id="varnamala-root"></div>
+        </article>
+
+        <!-- विभाग ४: व्याकरण प्रयोगशाळा -->
+        <article class="content-panel-section" id="section-grammar">
+          <div id="grammar-root"></div>
+        </article>
+
+        <!-- विभाग ५: प्रादेशिक बोलीभाषा -->
+        <article class="content-panel-section" id="section-dialects">
+          <div id="dialects-root"></div>
+        </article>
+
+        <!-- विभाग ६: १००० शब्दसंग्रह फ्लॅशकार्ड्स -->
+        <article class="content-panel-section" id="section-flashcards">
+          <div id="flashcards-root"></div>
+        </article>
+
+        <!-- विभाग ७: अभ्यास संसाधने व संदर्भ -->
+        <article class="content-panel-section" id="section-resources">
+          <div id="resources-root"></div>
+        </article>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- =========================================================
+       ३. प्रतिमा व नकाशा पॉप-अप (Image Lightbox Modal)
+       ========================================================= -->
+  <div class="image-lightbox-modal" id="image-lightbox-modal" aria-hidden="true" role="dialog" aria-label="प्रतिमा तपशील पॉप-अप">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="पॉप-अप बंद करा" title="बंद करा (Esc)">✕</button>
+      <div class="lightbox-content">
+        <div class="lightbox-image-wrap">
+          <img src="" alt="" id="lightbox-img" class="lightbox-img" />
+        </div>
+        <div class="lightbox-info-bar">
+          <h4 id="lightbox-title" class="lightbox-title"></h4>
+          <p id="lightbox-caption" class="lightbox-caption"></p>
+          <div class="lightbox-credit-row" id="lightbox-credits"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data/vocabulary.js"></script>
+  <script src="data/content.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/varnamala.js"></script>
+  <script src="js/grammar.js"></script>
+  <script src="js/dialects.js"></script>
+  <script src="js/flashcards.js"></script>
+  <script src="js/resources.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
